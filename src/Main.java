@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -43,7 +45,7 @@ public class Main {
         for (int i = 0; i < monthSpences3.length; i++) {
             totalMonthSpence3 = (totalMonthSpence3 + monthSpences3[i]);
         }
-        int averageMonthSpence3 = totalMonthSpence3 / 4;
+        int averageMonthSpence3 = totalMonthSpence3 / monthSpences3.length;
         System.out.println("Средняя сумма трат за месяц составила " + averageMonthSpence3 + " рублей.");
 
         // Задача 4
@@ -54,5 +56,6 @@ public class Main {
         for (int i = reverseFullName.length - 1; i >=0; i=i-1) {
             System.out.print(reverseFullName[i]);
         }
+
     }
 }
